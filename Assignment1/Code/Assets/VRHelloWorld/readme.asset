@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d282ecdff9a0b4f82212582a8bc7c8, type: 3}
+  m_Name: readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 34f556d724b1bbf4097ca6220db2c581, type: 3}
+  title: WVRV402 Hello VR World Demo Readme
+  sections:
+  - heading: Intro
+    text: This is a minimal example project to allow you to create VR projects for
+      the WRVR402 module. It allows a VR avatar to be moved using a desktop/laptop
+      to control movement via the keyboard, and a mobile device and Google Cardboard
+      to control head movement and allow for depth vision. The devices are connected
+      to one another over a local network (WiFi works best).
+    linkText: 
+    url: 
+  - heading: Implementation (Networking)
+    text: This project makes use of the open source package called Mirror for establishing
+      and managing the network connection between the two devices. It is responsible
+      for establishing a connection, creating the correct types of objects (based
+      on whether the desktop or mobile device), synchronising the position and orientation
+      of certain objects and finally closing a connection.
+    linkText: Mirror link
+    url: https://mirror-networking.com/
+  - heading: Testing Network Behaviour
+    text: Multiple instances of the project can be run in editors using the ParrelSync
+      editor extension.
+    linkText: ParrelSync link
+    url: 'https://github.com/ VeriorPies/ParrelSync '
+  - heading: Implementation (VR)
+    text: The project makes use of the open source Google Cardboard SDK, a low cost
+      solution for Virtual Reality apps. It is responsible to head tracking and rendering
+      to the mobile device, allowing stereovision.
+    linkText: Google Cardboard link
+    url: https://developers.google.com/cardboard
+  - heading: Usage
+    text: '1) Build the app on Android, deploy to a mobile device and insert it into
+      the Google Cardboard holder. 2) Run the desktop app and click on START HOST.
+      3) Run the mobile app, click on FIND SERVERS, then click on the IP Address
+      of the Host that should appear. Note that the host and the client devices must
+      be on the same local network. Put mobile device into the Google Cardboard.
+      4) Control the position and orientation of avatar on the desktop using WASD
+      or arrow keys. 5) Control the camera orientation by looking around. '
+    linkText: 
+    url: 
+  - heading: Troubleshooting
+    text: If your mobile device is not able to connect to the host running on the
+      desktop/laptop, do the following. go to Windows Firewall settings -> Advanced
+      Settings ->Inbound Rules. Find Unity Editor in the list. If it has a red cross
+      in front, right click the entry, and select Properties. Then under General
+      tab, select "Allow the connection" under Actions
+    linkText: Forum link
+    url: https://forum.unity.com/threads/cant-connect-if-editor-is-server.463622/
+  loadedLayout: 0

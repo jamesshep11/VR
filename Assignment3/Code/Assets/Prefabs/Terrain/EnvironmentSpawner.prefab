@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8582487608242175272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8582487608242172630}
+  - component: {fileID: 8582487608242172631}
+  m_Layer: 0
+  m_Name: EnvironmentSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8582487608242172630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582487608242175272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 180.80145, y: 70.32689, z: 76.47594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8582487608242172631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582487608242175272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f710250abab6f24a954bdf3c3c1ac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 0
+  terrains:
+  - {fileID: 0}
+  treeTypes:
+  - enabled: 1
+    name: Big Rock 1
+    seed: 99791
+    probability: 1
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: -35, y: 1000}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 2
+    prefabs:
+    - index: 0
+      probability: 50
+      prefab: {fileID: 5353588270218422151, guid: 83145382902cecc4286a4f62b720fb37, type: 3}
+    - index: 1
+      probability: 50
+      prefab: {fileID: 1326364778710077615, guid: 7ece6646ef2475b44959032f5d55a8f6, type: 3}
+    - index: 2
+      probability: 50
+      prefab: {fileID: 2763398485800194716, guid: 232241c4030929146b8c0b57349f65a4, type: 3}
+    - index: 3
+      probability: 50
+      prefab: {fileID: 765085598264726, guid: 4462df8489303ba448bfd5971b82232f, type: 3}
+    distance: 5
+    scaleRange: {x: 1, y: 2}
+    sinkAmount: 1
+  - enabled: 1
+    name: Rock 1
+    seed: 15926
+    probability: 5
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: -35, y: 1000}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 8
+    prefabs:
+    - index: 4
+      probability: 100
+      prefab: {fileID: 6573723043079136192, guid: ed18eacbf5bb4514d8a6b7a36c669520, type: 3}
+    - index: 5
+      probability: 100
+      prefab: {fileID: 548334872500488905, guid: 4de9cfc6da7eef349881466ae54ea745, type: 3}
+    - index: 6
+      probability: 100
+      prefab: {fileID: 5906073979545334107, guid: ed0cb6b83666ad94ea9fbf08b3ed5d46, type: 3}
+    - index: 7
+      probability: 100
+      prefab: {fileID: 41238406526551179, guid: 81a7d23c8cb63c94cbb1842341b86493, type: 3}
+    - index: 8
+      probability: 100
+      prefab: {fileID: 8665137746270264013, guid: d0976a0f16cdc8e419422a94ffec72d1, type: 3}
+    distance: 4
+    scaleRange: {x: 1, y: 3}
+    sinkAmount: 0.2
+  - enabled: 1
+    name: Chinese Evergreen
+    seed: 0
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: -35, y: 1000}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 149
+    prefabs:
+    - index: 9
+      probability: 100
+      prefab: {fileID: 1785748907305276, guid: 0881c8d4d4b76ad4b8c4dea9f453189f, type: 3}
+    - index: 10
+      probability: 100
+      prefab: {fileID: 1759367750858294, guid: 4269869be246b9648b7775b42c2a452d, type: 3}
+    - index: 11
+      probability: 100
+      prefab: {fileID: 1375174633553942, guid: 90daf78708fee99428a8d31bad51fa14, type: 3}
+    - index: 12
+      probability: 100
+      prefab: {fileID: 1117064096785810, guid: 38902c77a51673b49946f0c92f53595f, type: 3}
+    distance: 2
+    scaleRange: {x: 2, y: 3}
+    sinkAmount: 0
+  - enabled: 1
+    name: Dogram Plant
+    seed: 0
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: -35, y: 1000}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 541
+    prefabs:
+    - index: 13
+      probability: 100
+      prefab: {fileID: 1298481390831956, guid: 73599c0a66cd0234a85c595a8f8a1738, type: 3}
+    - index: 14
+      probability: 100
+      prefab: {fileID: 1550230207191338, guid: a7901be2baf837243a84e046e16ad917, type: 3}
+    distance: 1
+    scaleRange: {x: 1, y: 1.5}
+    sinkAmount: 0
+  - enabled: 1
+    name: SuckerFish
+    seed: 0
+    probability: 50
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: -35, y: 1000}
+    slopeRange: {x: 0, y: 60}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 106
+    prefabs:
+    - index: 15
+      probability: 100
+      prefab: {fileID: 3866908435750393346, guid: 0414941f9b1b8cf46888b6ad04187d3f, type: 3}
+    distance: 5
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  grassPrefabs: []
+  terrainSettings:
+    drawTreesAndFoliage: 1
+    perservePrefabLayer: 1
+    treeLightProbes: 0
+    treeDistance: 1000
+    billboardStart: 300
+    maxMeshTrees: 50
+    grassDistance: 200
+    grassDensity: 1
+    windStrength: 0.15
+    windSpeed: 1
+    windFrequency: 2
+    wintTint: {r: 1, g: 1, b: 1, a: 1}
+  cellSize: 64
+  cellDivisions: 4
+  highPrecisionCollision: 1
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  autoRespawnTrees: 1
+  terrainMinMaxHeight: {x: 0, y: 2000}
+  detailResolution: 256
+  detailResolutionIndex: 0
+  grassPatchSize: 128
+  grassPatchSizeIndex: 4
+  tempColliders: []
+  waterHeight: -1
